@@ -10,6 +10,9 @@ td {
 table {
   border-collapse: collapse;
 }
+.board {
+  margin: 0 auto;
+}
 .piece {
   height: 50px;
   width: 50px;
