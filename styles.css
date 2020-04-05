@@ -10,7 +10,7 @@ td {
 table {
   border-collapse: collapse;
 }
-.board {
+#board {
   margin: 0 auto;
 }
 .piece {
