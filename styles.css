@@ -1,3 +1,9 @@
+html, body {
+  padding: 0;
+  margin: 0;
+
+}
+
 h1 {
   text-align: center;
   margin: 0;
@@ -9,10 +15,6 @@ td {
 }
 table {
   border-collapse: collapse;
-}
-body {
-  padding: 0;
-  margin: 0;
 }
 #board {
   margin: 0 auto;
