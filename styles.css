@@ -1,5 +1,7 @@
 h1 {
   text-align: center;
+  margin: 0;
+  font-size: 16px;
 }
 td {
   border: 5px solid black;
