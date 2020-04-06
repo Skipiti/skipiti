@@ -8,6 +8,9 @@ td {
 table {
   border-collapse: collapse;
 }
+body {
+  margin: 3px;
+}
 #board {
   margin: 0 auto;
 }
