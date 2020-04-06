@@ -30,11 +30,30 @@ function setChunks(colors) {
   return result;
 }
 
+function calculateSize() {
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  let borderSize = 3;
+
+  let base = width;
+
+  if (height < width) {
+    base = height;
+  }
+
+  let offset = borderSize * 11 + 40;
+
+  let size = (base - offset) / 10;
+
+  return size;
+}
+
 function createBoardHtml(colors) {
+  let size = calculateSize();
   var boardHTML = '<tr>';
   colors.forEach(function(colorsChunk, i) {
     colorsChunk.forEach(function(color, j) {
-      boardHTML += '<td><div class="piece piece_' + color + '"></div></td>';
+      boardHTML += `<td><div class="piece piece_${color}" style="width: ${size}px; height: ${size}px"></div></td>`;
       if ((j + 1) % 10 === 0) {
         boardHTML += '</tr><tr>';
       }

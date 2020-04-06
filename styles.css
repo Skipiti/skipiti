@@ -11,19 +11,17 @@ table {
   border-collapse: collapse;
 }
 body {
-  margin: 3px;
+  padding: 0;
+  margin: 0;
 }
 #board {
   margin: 0 auto;
 }
 .piece {
-  height: 7vh;
-  width: 7vh;
-  min-width: 40px;
-  min-height: 40px;
   background: blue;
   border-radius: 50%;
   border: 2px solid gray;
+  box-sizing: border-box;
 }
 .piece_red {
   background: red;
